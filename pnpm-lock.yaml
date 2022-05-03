@@ -2,6 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@babel/core': '>=7.0.0 <8.0.0'
+  '@chakra-ui/icons': ^1.1.7
   '@chakra-ui/react': ^1.8.8
   '@emotion/react': ^11
   '@emotion/styled': ^11
@@ -29,6 +30,7 @@ specifiers:
   zod: ^3.14.4
 
 dependencies:
+  '@chakra-ui/icons': 1.1.7_react@18.1.0
   '@chakra-ui/react': 1.8.8_3a4d6c759fe37848f2f0246d65400fc0
   '@emotion/react': 11.9.0_908a4dd261b043bebb3f296e8b358239
   '@emotion/styled': 11.8.1_43b0c0febcc59fceea267ed228243096
@@ -507,6 +509,27 @@ packages:
     dependencies:
       '@chakra-ui/system': 1.12.1_9f23f4097fbec8b91de0b8b9767d3123
       '@chakra-ui/utils': 1.10.4
+      react: 18.1.0
+    dev: false
+
+  /@chakra-ui/icon/2.0.5_react@18.1.0:
+    resolution: {integrity: sha512-ZrqRvCCIxGr4qFd/r1pmtd9tobRmv8KAxV7ygFoc/t4vOSKTcVIjhE12gsI3FzgvXM15ZFVwsxa1zodwgo5neQ==}
+    peerDependencies:
+      '@chakra-ui/system': '>=1.0.0'
+      react: '>=16.8.6'
+    dependencies:
+      '@chakra-ui/utils': 1.10.4
+      react: 18.1.0
+    dev: false
+
+  /@chakra-ui/icons/1.1.7_react@18.1.0:
+    resolution: {integrity: sha512-YIHxey/B4M2PyFASlHXtAWFyW+tsAtGAChOJ8dsM2kpu1MbVUqm/6nMI1KIFd7Te5IWuNYA75rAHBdLI0Yu61A==}
+    peerDependencies:
+      '@chakra-ui/system': '>=1.0.0'
+      react: '>=16.8.6'
+    dependencies:
+      '@chakra-ui/icon': 2.0.5_react@18.1.0
+      '@types/react': 17.0.44
       react: 18.1.0
     dev: false
 
@@ -1508,13 +1531,20 @@ packages:
 
   /@types/prop-types/15.7.5:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
-    dev: true
 
   /@types/react-dom/18.0.0:
     resolution: {integrity: sha512-49897Y0UiCGmxZqpC8Blrf6meL8QUla6eb+BBhn69dTXlmuOlzkfr7HHY/O8J25e1lTUMs+YYxSlVDAaGHCOLg==}
     dependencies:
       '@types/react': 18.0.8
     dev: true
+
+  /@types/react/17.0.44:
+    resolution: {integrity: sha512-Ye0nlw09GeMp2Suh8qoOv0odfgCoowfM/9MG6WeRD60Gq9wS90bdkdRtYbRkNhXOpG4H+YXGvj4wOWhAC0LJ1g==}
+    dependencies:
+      '@types/prop-types': 15.7.5
+      '@types/scheduler': 0.16.2
+      csstype: 3.0.11
+    dev: false
 
   /@types/react/18.0.8:
     resolution: {integrity: sha512-+j2hk9BzCOrrOSJASi5XiOyBbERk9jG5O73Ya4M0env5Ixi6vUNli4qy994AINcEF+1IEHISYFfIT4zwr++LKw==}
@@ -1526,7 +1556,6 @@ packages:
 
   /@types/scheduler/0.16.2:
     resolution: {integrity: sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==}
-    dev: true
 
   /@types/warning/3.0.0:
     resolution: {integrity: sha1-DSUBJorY+ZYrdA04fEZU9fjiPlI=}
